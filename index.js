@@ -4,7 +4,7 @@
  * Module dependencies
  */
 var decouple = require('decouple');
-var Emitter = require('emitter');
+var Emitter = require('./lib/Mango/emitter/index');
 
 /**
  * Privates

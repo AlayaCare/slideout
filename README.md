@@ -1,3 +1,8 @@
+# AlayaCare Changes
+We cloned this repo because it has a git+https dependency on Mango/emitter and it's not possible to use that with our pipeline.
+
+So what we did is removed the git+https dependency and copied the `dist/index.js` file from `emitter@0.0.7` and put it in the `lib` folder
+
 # Slideout.js
 
 [![NPM version][npm-image]][npm-link] [![License][lic-image]][npm-link] [![Build status][travis-image]][travis-link] [![Coverage Status][coverage-image]][coverage-link] [![Dependency status][deps-image]][deps-link] [![devDependency status][devdeps-image]][devdeps-link] [![downloads][dt-image]][npm-link]
