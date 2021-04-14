@@ -1,5 +1,5 @@
 # AlayaCare Changes
-We cloned this repo because it has a git+https dependency on Mango/emitter and it's not possible to use that with our pipeline.
+We cloned this repo because it has a git+https dependency on Mango/emitter and it's not possible to use that with our pipeline. What introduced the need for this change is the node upgrade from 10.5.0 to 10.24.1. From this version and above, node needs git credentials for git+https dependencies and it's hard to do that with how our stack works.
 
 So what we did is removed the git+https dependency and copied the `dist/index.js` file from `emitter@0.0.7` and put it in the `lib` folder
 
